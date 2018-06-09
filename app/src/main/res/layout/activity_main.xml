@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:src="@drawable/football"
+        tools:ignore="ContentDescription,HardcodedText"
+        android:layout_alignParentLeft="true" />
+
+
+    <RelativeLayout
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp">
+
+        <TextView
+            android:id="@+id/brasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="@string/brazil"
+            android:textColor="#00FF00"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/b_goals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brasil"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:textColor="#00FFFF"
+            android:text="0"
+            android:textSize="40sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/add_b_goals"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/b_goals"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:text="GOALS"
+            tools:ignore="HardcodedText"
+            android:onClick="addGoalsBrazil"/>
+
+        <TextView
+            android:id="@+id/b_corners"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/brasil"
+            android:text="0"
+            android:textColor="#fff000"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText"
+            android:layout_toRightOf="@+id/brasil" />
+
+        <Button
+            android:id="@+id/add_b_corners"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_b_goals"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="CORNERS"
+            android:onClick="addBrazilCorners"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/b_fouls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/add_b_fouls"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/brasil"
+            android:layout_toRightOf="@+id/brasil"
+            android:text="0"
+            android:textColor="#fffafa"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/add_b_fouls"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_b_corners"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="FOULS"
+            tools:ignore="HardcodedText"
+            android:onClick="addBrazilFouls"/>
+
+        <Button
+            android:id="@+id/add_b_rcards"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_b_fouls"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/r_cards"
+            android:onClick="addBrazilReds"/>
+
+        <TextView
+            android:id="@+id/b_rcards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/add_b_rcards"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/brasil"
+            android:layout_toRightOf="@+id/brasil"
+            android:text="0"
+            android:textColor="#FFFFF0"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/add_b_ycards"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_b_rcards"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/y_cards"
+            android:onClick="addBrazilYellows"/>
+        <TextView
+            android:id="@+id/b_ycards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/add_b_ycards"
+            android:layout_toRightOf="@id/add_b_ycards"
+            android:text="0"
+            tools:ignore="HardcodedText"
+            android:textSize="30sp"
+            android:textColor="#fffafa"
+            android:layout_marginTop="345dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp">
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/germany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/germany"
+            android:textColor="#00FF00"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/g_goals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/germany"
+            android:textColor="#00FFFF"
+            android:text="@string/_0"
+            android:textSize="40sp"
+            android:layout_marginStart="20dp" />
+
+        <Button
+
+            android:id="@+id/add_g_goals"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/g_goals"
+            android:layout_marginTop="4dp"
+            android:text="@string/goals"
+            android:onClick="addGoalsGermany"/>
+
+        <Button
+            android:id="@+id/add_g_corners"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_g_goals"
+            android:layout_marginTop="10dp"
+            android:text="@string/corners"
+            android:onClick="addGermanyCorners"/>
+
+        <Button
+            android:id="@+id/add_g_fouls"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_g_corners"
+            android:layout_marginTop="10dp"
+            android:onClick="addGermanyFouls"
+            android:text="@string/fouls" />
+
+        <Button
+            android:onClick="addGermanyReds"
+            android:id="@+id/add_g_rcards"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_g_fouls"
+            android:layout_marginTop="10dp"
+            android:text="@string/r_cards" />
+
+        <Button
+            android:onClick="addGermanyYellows"
+            android:id="@+id/add_g_ycards"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_g_rcards"
+            android:layout_marginTop="10dp"
+            android:text="@string/y_cards" />
+
+        <TextView
+            android:id="@+id/g_yellows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/add_g_ycards"
+            android:layout_marginTop="333dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textColor="#FFFF00"
+            android:layout_toEndOf="@id/add_g_ycards"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/g_reds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/add_g_rcards"
+            android:layout_toEndOf="@id/add_g_rcards"
+            android:text="0"
+            android:textSize="30sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="279dp"
+            android:textColor="#FF0000"
+            tools:ignore="HardcodedText"
+            android:layout_marginStart="5dp" />
+        <TextView
+            android:id="@+id/g_fouls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/add_g_fouls"
+            android:layout_toEndOf="@id/add_g_fouls"
+            android:layout_marginTop="219dp"
+            android:textColor="@color/colorPrimary"
+            android:text="0"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/g_corners"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:text="0"
+            android:layout_toEndOf="@id/add_g_corners"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="159dp"
+            tools:ignore="HardcodedText,RtlCompat"
+            android:layout_toRightOf="@id/add_g_corners" />
+
+    </RelativeLayout>
+
+    <Button
+        android:onClick="resetValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="22dp"
+        android:text="Reset"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="150dp"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>

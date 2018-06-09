@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">World Cup Finals</string>
+    <string name="y_cards">Y-CARDS</string>
+    <string name="r_cards">R-CARDS</string>
+    <string name="fouls">FOULS</string>
+    <string name="corners">CORNERS</string>
+    <string name="goals">GOALS</string>
+    <string name="germany">GERMANY</string>
+    <string name="_0">0</string>
+    <string name="brazil">BRAZIL</string>
+</resources>
