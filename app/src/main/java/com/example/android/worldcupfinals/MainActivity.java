@@ -153,4 +153,5 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.g_yellows);
         scoreView.setText(String.valueOf(score));
     }
+
 }

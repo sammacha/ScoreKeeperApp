@@ -32,8 +32,9 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
-            android:text="@string/brazil"
+            android:text="FRANCE"
             android:textColor="#00FF00"
+            tools:ignore="HardcodedText"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -148,19 +149,20 @@
             android:layout_marginTop="10dp"
             android:text="@string/y_cards"
             android:onClick="addBrazilYellows"/>
+
         <TextView
             android:id="@+id/b_ycards"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="345dp"
             android:layout_toEndOf="@id/add_b_ycards"
             android:layout_toRightOf="@id/add_b_ycards"
             android:text="0"
-            tools:ignore="HardcodedText"
-            android:textSize="30sp"
             android:textColor="#fffafa"
-            android:layout_marginTop="345dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"/>
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
 
 
     </RelativeLayout>
@@ -181,8 +183,9 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:text="@string/germany"
+            android:text="CROATIA"
             android:textColor="#00FF00"
+            tools:ignore="HardcodedText"
             android:textSize="30sp" />
 
         <TextView
